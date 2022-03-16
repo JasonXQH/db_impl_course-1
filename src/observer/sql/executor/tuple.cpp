@@ -259,9 +259,27 @@ void TupleRecordConverter::add_record(const char *record)
         // TODO 从record中读取存储的日期
         int value = *(int *)(record + field_meta->offset());
         // TODO 将日期转换为满足输出格式的字符串，注意这里月份和天数，不足两位时需要填充0
-//        char * date = 'sss';
+        char date[7] = {0};
+        for(int i=7 ;i>=0 ;i--) {
+            int tempNumber = value%10;
+            date[i] = char(tempNumber)+48;
+            value = value /10;
+        }
+        char finalDate[11] = {0};
+        for(int i =0;i<4;i++){
+            finalDate[i] = date[i];
+        }
+        finalDate[4]='-';
+          for(int i =5;i<=6;i++){
+              finalDate[i] = date[i-1];
+          }
+          finalDate[7]='-';
+          for(int i =8;i<=9;i++){
+              finalDate[i] = date[i-2];
+          }
+          finalDate[10] = '\0';
         // TODO 将字符串添加到tuple中
-//        tuple.add(date, strlen(date));
+        tuple.add(finalDate, strlen(finalDate));
       }break;
       default: {
         LOG_PANIC("Unsupported field type. type=%d", field_meta->type());

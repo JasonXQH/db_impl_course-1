@@ -255,11 +255,16 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/observer/sql/parser/parse.cpp</url>
-          <line>115</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/observer/sql/executor/tuple.cpp</url>
+          <line>267</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="date[8]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

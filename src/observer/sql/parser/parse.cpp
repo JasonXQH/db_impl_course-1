@@ -103,7 +103,7 @@ int value_init_date(Value *value, const char *v) {
     char year[4] = {0};
     char month[2] = {0};
     char day[2] = {0};
-    char date[10] = {0};
+    char date[9] = {0};
     // TODO 将 value 的 type 属性修改为日期属性:DATES
   value->type = DATES;
   // 从lex的解析中读取 year,month,day
@@ -114,24 +114,26 @@ int value_init_date(Value *value, const char *v) {
   if(b) return -1;
 //   TODO 将日期转换成整数 2001,1,1 => 20010101
     if(m<10){
-        sprintf(month, "%d", m);
+        month[1] = char(m);
     }else{
         sprintf(month, "%d", m);
     }
     if(d<10){
-        sprintf(day, "%d", d);
+        day[1] = char(d);
     }else{sprintf(day, "%d", d);}
     sprintf(year, "%d",y);
     strcat(date,year);
     for (int i=4;i<=5;i++){
-        date[i] = month[i-4];
+        date[i] = month[i-4]+48;
     }
     for (int i=6;i<=7;i++){
-        date[i] = day[i-6];
+        date[i] = day[i-6]+48;
     }
 
+    int integerDate = (int)strtol(date,NULL,10);
   // TODO 将value 的 data 属性修改为转换后的日期
-//  value->data =  ;
+    value->data = malloc(sizeof(integerDate));
+    memcpy(value->data, &integerDate, sizeof(integerDate));
   return 0;
 }
 
