@@ -123,16 +123,50 @@ RC Table::create(
 
 RC Table::destroy(const char* dir) {
   //刷新所有脏页
+  LOG_INFO("dir = %s; table name  = %s",dir, name());
   RC rc = sync();
   if(rc != RC::SUCCESS) return rc;
+  /*
+    **提示1**：删除文件使用int unlink(constchar*pathname);
 
+    **提示2**：错误检查参考同文件其他函数
+
+    **提示3**：在执行SQL语句 `create table t`时，MiniOB会新建一个 `t.table` 文件，同时为了存储数据也会新建一个 `t.data`文件存储下来。同时创建索引的时候，也会创建记录索引数据的文件，在删除表时也要一起删除掉。那么删除表，就需要删除`t.table`文件、`t.data`文件和关联的索引文件。
+
+    同时由于 buffer pool 的存在，在新建表和插入数据的时候，会写入 buffer pool 缓存。所以 drop table，不仅需要删除文件，也需要清空 buffer pool，防止在数据没落盘的时候，再建立同名表，仍然可以查询到数据。
+
+    如果建立了索引，比如 `t_id on t(id)`，那么也会新建一个 `t_id.index` 文件，也需要删除这个文件。
+
+    这些东西全部清空，那么就完成了 drop table。
+   * */
   //TODO 删除描述表元数据的文件
-
+    std::string meta_data = table_meta_file(dir,name()); //meta_data:"./miniob/db/sys/t.table"
+    if(unlink(meta_data.c_str())!=0){
+        LOG_ERROR("Failed to remove metadata file %s, the errno = %d ",meta_data.c_str(),errno);
+        return RC::GENERIC_ERROR;
+    }
   //TODO 删除表数据文件
-
-  //TODO 清理所有的索引相关文件数据与索引元数据
-
-  return RC::GENERIC_ERROR;
+    std::string file_data = table_data_file(dir,name());//file_data:"./miniob/db/sys/t.data"
+    if(unlink(file_data.c_str())!=0){
+        LOG_ERROR("Failed to remove data file %s, the errno = %d ",file_data.c_str(),errno);
+        return RC::GENERIC_ERROR;
+    }
+  //TODO 清理所有的索引相关文件数据 与 索引元数据
+    int index_number = table_meta_.index_num();
+    //注意删除index文件
+    for(int i = 0;i<index_number;++i){
+        ((BplusTreeIndex*)indexes_[i])->close();
+        //找到 index_file
+        const IndexMeta *index_meta = table_meta_.index(i);
+        std::string index_file = table_index_file(dir, name(), index_meta->name());
+        LOG_INFO("index_meta name = %s; index_file_path = %s",index_meta->name(),index_file.c_str());
+        //删除index_file
+        if(unlink(index_file.c_str()) != 0){
+            LOG_ERROR("Failed to remove index file=%s, errno=%d", index_file.c_str(), errno);
+            return RC::GENERIC_ERROR;
+        }
+    }
+  return rc;
 }
 
 
