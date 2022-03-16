@@ -14798,3 +14798,19 @@ ThreadPools=SQLThre
 [2022-3-16 19:49:39 pid:39423 tid:104d68580  INFO: server.cpp recv 166]>>The peer has been closed 127.0.0.1:34509
 
 [2022-3-16 19:49:39 pid:39423 tid:104d68580  INFO: server.cpp close_connection 103]>>Close connection of 127.0.0.1:34509.
+[2022-3-16 19:50:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0.0166667
+[2022-3-16 19:50:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0.0333333
+[2022-3-16 19:50:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0.0166667
+[2022-3-16 19:50:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0.0333333
+[2022-3-16 19:51:10 pid:39423 tid:16b8d7000  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-16 19:51:10 pid:39423 tid:16b8d7000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-16 19:51:10 pid:39423 tid:16b8d7000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-16 19:51:10 pid:39423 tid:16b8d7000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-16 19:52:10 pid:39423 tid:16b7bf000  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-16 19:52:10 pid:39423 tid:16b7bf000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-16 19:52:10 pid:39423 tid:16b7bf000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-16 19:52:10 pid:39423 tid:16b7bf000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
