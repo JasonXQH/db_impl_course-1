@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: init.cpp init 201]>>Output configuration 
+=======
 [2022-3-16 18:9:40 pid:35209 tid:102f1c580  INFO: init.cpp init 201]>>Output configuration 
+>>>>>>> date
 Begin dump configuration
 []
 
@@ -58,6 +62,61 @@ EventHistory=false
 MaxEventHistoryNum=100
 STAGES=SessionStage,ExecuteStage,OptimizeStage,ParseStage,ResolveStage,PlanCacheStage,QueryCacheStage,DefaultStorageStage,MemStorageStage,TimerStage,MetricsStage
 ThreadPools=SQLThre
+<<<<<<< HEAD
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: init.cpp init_seda 63]>>(Re)Starting State: Pid: 30975 Time: Wed Mar 16 12:57:10 2022
+
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: init.cpp init_seda 64]>>The process Name is observer
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_event_history 209]>>Successfully init_event_history, EventHistory:0, MaxEventHops:100
+[2022-3-16 12:57:10 pid:30975 tid:16d7af000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16d7af000, threadname = SQLThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16d8c7000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16d8c7000, threadname = SQLThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16d953000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16d953000, threadname = IOThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16d83b000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16d83b000, threadname = SQLThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16d9df000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16d9df000, threadname = IOThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16daf7000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16daf7000, threadname = DefaultThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16db83000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16db83000, threadname = DefaultThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:16dc0f000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16dc0f000, threadname = DefaultThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage SessionStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage ExecuteStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:16da6b000  INFO: thread_pool.cpp run_thread 258]>>threadid = 16da6b000, threadname = IOThreads
+
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage OptimizeStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage ParseStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage ResolveStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage PlanCacheStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage QueryCacheStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: default_storage_stage.cpp set_properties 88]>>Use sys as system db
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: default_handler.cpp init 54]>>Default handler init with ./miniob success
+[2022-3-16 12:57:10 pid:30975 tid:102828580  WARNNING: default_handler.cpp create_db 78]>>Db already exists: sys
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: db.cpp open_all_tables 144]>>All table have been opened. num=0
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: default_storage_stage.cpp set_properties 112]>>Open system db success: sys
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage DefaultStorageStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage MemStorageStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for TimerStage, use default threadpool DefaultThreads
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage TimerStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for MetricsStage, use default threadpool DefaultThreads
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: seda_config.cpp init_stages 354]>>Stage MetricsStage use threadpool DefaultThreads.
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :DefaultStorageStage.query
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.sql
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: init.cpp init 225]>>Successfully init utility
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.readsocket
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.writesocket
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: server.cpp start_tcp_server 333]>>Listen on port 6789
+[2022-3-16 12:57:10 pid:30975 tid:102828580  INFO: server.cpp start_tcp_server 350]>>Observer start success
+[2022-3-16 12:57:28 pid:30975 tid:16dd27000  INFO: main.cpp quit_thread_func 137]>>Receive signal: 15
+[2022-3-16 12:57:28 pid:30975 tid:16dd27000  INFO: server.cpp shutdown 433]>>Server shutting down
+[2022-3-16 12:57:28 pid:30975 tid:16dd27000  INFO: server.cpp shutdown 453]>>Server quit
+[2022-3-16 12:57:28 pid:30975 tid:102828580  INFO: main.cpp main 169]>>Server stopped
+[2022-3-16 12:57:28 pid:30975 tid:102828580  INFO: db.cpp sync 172]>>Successfully sync db. db=sys
+[2022-3-16 12:57:28 pid:30975 tid:102828580  INFO: db.cpp ~Db 33]>>Db has been closed: sys
+=======
 [2022-3-16 18:9:40 pid:35209 tid:102f1c580  INFO: init.cpp init_seda 63]>>(Re)Starting State: Pid: 35209 Time: Wed Mar 16 18:09:40 2022
 
 [2022-3-16 18:9:40 pid:35209 tid:102f1c580  INFO: init.cpp init_seda 64]>>The process Name is observer
@@ -14814,6 +14873,7 @@ ThreadPools=SQLThre
 [2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
 [2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
 [2022-3-16 19:53:10 pid:39423 tid:16b84b000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+<<<<<<< HEAD
 [2022-3-16 20:8:9 pid:41703 tid:102df8580  INFO: init.cpp init 201]>>Output configuration 
 Begin dump configuration
 []
@@ -16503,3 +16563,6 @@ ThreadPools=SQLThre
 [2022-3-16 23:59:11 pid:42084 tid:16b617000  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
 [2022-3-16 23:59:11 pid:42084 tid:16b617000  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
 [2022-3-16 23:59:11 pid:42084 tid:16b617000  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+=======
+>>>>>>> date
+>>>>>>> main
