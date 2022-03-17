@@ -6,6 +6,7 @@
         symlinks = false
         ignorecase = true
         hideDotFiles = dotGitOnly
+        excludesfile = ~/.gitignore_global
 [remote "origin"]
         url = https://github.com/dase314/db_impl_course.git
         fetch = +refs/heads/*:refs/remotes/origin/*
