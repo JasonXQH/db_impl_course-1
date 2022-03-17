@@ -1,5 +1,0 @@
-add_test( checkRotateTest.CheckRoateTest [==[/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/build/bin/log_test]==] [==[--gtest_filter=checkRotateTest.CheckRoateTest]==] --gtest_also_run_disabled_tests)
-set_tests_properties( checkRotateTest.CheckRoateTest PROPERTIES WORKING_DIRECTORY [==[/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/build/unitest]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( testEnableTest.CheckEnableTest [==[/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/build/bin/log_test]==] [==[--gtest_filter=testEnableTest.CheckEnableTest]==] --gtest_also_run_disabled_tests)
-set_tests_properties( testEnableTest.CheckEnableTest PROPERTIES WORKING_DIRECTORY [==[/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/build/unitest]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( log_test_TESTS checkRotateTest.CheckRoateTest testEnableTest.CheckEnableTest)

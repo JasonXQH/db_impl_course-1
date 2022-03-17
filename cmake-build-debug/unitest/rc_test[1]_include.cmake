@@ -1,5 +1,0 @@
-if(EXISTS "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/unitest/rc_test[1]_tests.cmake")
-  include("/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/unitest/rc_test[1]_tests.cmake")
-else()
-  add_test(rc_test_NOT_BUILT rc_test_NOT_BUILT)
-endif()
