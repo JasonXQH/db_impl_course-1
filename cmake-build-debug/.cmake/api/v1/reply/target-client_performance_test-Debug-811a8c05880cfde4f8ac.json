@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/bitmap_test"
+			"path" : "bin/client_performance_test"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"unitest/CMakeLists.txt",
+			"test/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 42,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
@@ -41,7 +41,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 44,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
@@ -84,15 +84,11 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/unitest/."
+					"path" : "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/test/."
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/unitest/../deps"
-				},
-				{
-					"backtrace" : 6,
-					"path" : "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/unitest/../src/observer"
+					"path" : "/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/test/../deps"
 				},
 				{
 					"backtrace" : 6,
@@ -118,14 +114,14 @@
 	[
 		{
 			"backtrace" : 3,
-			"id" : "common::@6d45b4e2c634211afc81"
+			"id" : "observer_static::@4581bebf43805b95f013"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "observer_static::@4581bebf43805b95f013"
+			"id" : "common::@6d45b4e2c634211afc81"
 		}
 	],
-	"id" : "bitmap_test::@52cd600a4d0e1e8e952f",
+	"id" : "client_performance_test::@36f028580bb02cc8272a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -145,16 +141,11 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/usr/local/lib64",
+				"fragment" : "-L\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/test/../lib\"",
 				"role" : "libraryPath"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "-L\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/unitest/../lib\"",
-				"role" : "libraryPath"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/usr/local/lib -Wl,-rpath,/usr/local/lib64 -Wl,-rpath,\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/unitest/../lib\" -Wl,-rpath,\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/lib\"",
+				"fragment" : "-Wl,-rpath,/usr/local/lib -Wl,-rpath,\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/test/../lib\" -Wl,-rpath,\"/Volumes/Samsung_T5/大学课堂/2022春季-大三下/高级数据库管理系统 胡卉芪/db_impl_course/cmake-build-debug/lib\"",
 				"role" : "libraries"
 			},
 			{
@@ -165,16 +156,6 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "-ldl",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lgtest",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lgtest_main",
 				"role" : "libraries"
 			},
 			{
@@ -208,12 +189,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "bitmap_test",
-	"nameOnDisk" : "bitmap_test",
+	"name" : "client_performance_test",
+	"nameOnDisk" : "client_performance_test",
 	"paths" : 
 	{
-		"build" : "unitest",
-		"source" : "unitest"
+		"build" : "test",
+		"source" : "test"
 	},
 	"sourceGroups" : 
 	[
@@ -230,7 +211,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "unitest/bitmap_test.cpp",
+			"path" : "test/client_performance_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

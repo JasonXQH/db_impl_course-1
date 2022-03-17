@@ -118,11 +118,11 @@
 	[
 		{
 			"backtrace" : 3,
-			"id" : "common::@6d45b4e2c634211afc81"
+			"id" : "observer_static::@4581bebf43805b95f013"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "observer_static::@4581bebf43805b95f013"
+			"id" : "common::@6d45b4e2c634211afc81"
 		}
 	],
 	"id" : "path_test::@52cd600a4d0e1e8e952f",
