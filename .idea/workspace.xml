@@ -29,34 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c81e0ae-6ec3-4c01-bb5a-4f4eaa084193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/bin/miniob/db/sys/t.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/bin/miniob/db/sys/t.table" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bin/obclient" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/obclient" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bin/observer" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/observer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/bin/observer.log.20220317" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/observer.log.20220317" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/event/execution_plan_event.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/event/execution_plan_event.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/event/storage_event.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/event/storage_event.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/session/session.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/session/session.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/execute_stage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/execute_stage.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/execution_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/execution_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/tuple.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/executor/tuple.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/lex.yy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/lex.yy.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/parse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/parse.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/parse_stage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/parse_stage.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/yacc_sql.tab.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/sql/parser/yacc_sql.tab.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/bplus_tree.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/bplus_tree.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/bplus_tree_index.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/bplus_tree_index.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/condition_filter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/condition_filter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/field_meta.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/field_meta.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/storage/common/table.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/storage/common/table.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +66,15 @@
     <option name="minorVersion" value="3.3" />
   </component>
   <component name="ProjectId" id="25bKzqiGEwYehrnpazRT9FpFYAU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -246,6 +223,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
